@@ -1,0 +1,24 @@
+@import "globalimport";
+
+.links > * {
+    @include centered;
+}
+
+.user {
+    @extend %fa-icon;
+    @extend .fas;
+
+    &:before {
+        content: fa-content($fa-var-user);
+    }
+}
+
+.twitter {
+    @extend %fa-icon;
+    @extend .fab;
+
+    &:before {
+        content: fa-content($fa-var-twitter);
+        color: #3cf;
+    }
+}

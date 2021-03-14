@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+@import 'globalimport';
+
+.presentation > p {
+  @include centered;
+
+  font-weight: bold;
+  font-size: calc(10px + 4vmin);
+}
+
+.highlight {
+  color: $emphasized-color;
+}
+
+.tellmemore {
+  @include centered;
+  padding: 40px 90px;
+}
+
+.tellmemore > a {
+  color: $emphasized-color;
+  padding: 10px 30px 10px;
+  border: 2px solid $emphasized-color;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tellmemore > a:hover {
+  color: $global-bg-color;
+  background-color: $emphasized-color;
+}

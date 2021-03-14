@@ -1,0 +1,13 @@
+
+@import 'globalimport';
+
+section > div {
+  font-family: 'Montserrat',sans-serif;
+  background-color: $global-bg-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: rgb(0,0,0);
+}
