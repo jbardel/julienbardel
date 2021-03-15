@@ -4,14 +4,10 @@ function Links() {
 
     return (
         <div className={styles.links}>
-            <p>
-                Hello ! My name is Julien Bardel
-            </p>
-            <ul>
-                <li><span className={styles.twitter}></span>Twitter</li>
-                <li><span className={styles.user}></span>User</li>
-
-            </ul>
+                <a href="https://www.linkedin.com/in/julienbardel/"><i className={styles.linkedin}></i></a>
+                <a href="https://twitter.com/jubardel"><i className={styles.twitter}></i></a>
+                <a href="https://github.com/jbardel"><i className={styles.github}></i></a>
+                <a href="mailto:julien.bardel@gmail.com"><i className={styles.mail}></i></a>
         </div>
     );
 }

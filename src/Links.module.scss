@@ -1,24 +1,75 @@
 @import "globalimport";
 
-.links > * {
-    @include centered;
+$btn-size: 150px;
+
+@mixin social {
+    font-size: 90px;
+    vertical-align: middle;
 }
 
-.user {
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links > a {
+    margin: 0 10px;
+    display: inline-block;
+    background-color: #fff;
+    width: $btn-size;
+    height: $btn-size;
+    line-height: $btn-size;
+    white-space: nowrap;
+    border-radius: 28%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.linkedin {
     @extend %fa-icon;
-    @extend .fas;
+    @extend .fab;
+    @include social;
 
     &:before {
-        content: fa-content($fa-var-user);
+        content: fa-content($fa-var-linkedin-in);
+        color: #0077B5;
     }
 }
 
 .twitter {
     @extend %fa-icon;
     @extend .fab;
+    @include social;
 
     &:before {
         content: fa-content($fa-var-twitter);
         color: #3cf;
     }
+}
+
+.github {
+    @extend %fa-icon;
+    @extend .fab;
+    @include social;
+
+    &:before {
+        content: fa-content($fa-var-github);
+        color: #333;
+    }
+}
+
+
+.mail {
+    @extend %fa-icon;
+    @extend .fas;
+    @include social;
+
+    &:before {
+        content: fa-content($fa-var-paper-plane);
+        color: rgb(65, 134, 224);
+    }
+    
+    
 }
